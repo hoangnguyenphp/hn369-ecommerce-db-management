@@ -32,10 +32,10 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- Spring Boot Core -->
+        <!-- Spring Boot Starter Web for MVC and Swagger UI -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!-- Liquibase -->
