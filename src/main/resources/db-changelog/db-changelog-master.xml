@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<!-- Application -->
+    <include file="db-changelog/app/db.changelog-01.xml"/>
+    
+    <!-- Online Code Formatter-->
+    <include file="db-changelog/online-code-formatter/db-changelog-01.xml"/>
+    <include file="db-changelog/online-code-formatter/db-changelog-02.xml"/>
+    
+    <!-- Ecommerce Catalog -->
+    <include file="db-changelog/ecommerce-catalog/db-changelog-01.xml"/>
+
+</databaseChangeLog>
