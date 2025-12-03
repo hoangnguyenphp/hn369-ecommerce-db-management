@@ -13,3 +13,17 @@
 	mkdir src\main\java\com\hn369\ecommerce
 	
 5. Create the src/main/resources/db-changelog/ directory for Liquibase
+
+DELETE QUERY
+
+	delete from databasechangelog where filename like '%ecommerce-catalog%';
+	DROP TABLE IF EXISTS sku_translations CASCADE;
+	DROP TABLE IF EXISTS product_images CASCADE;
+	DROP TABLE IF EXISTS skus CASCADE;
+	DROP TABLE IF EXISTS product_translations CASCADE;
+	DROP TABLE IF EXISTS products CASCADE;
+	DROP TABLE IF EXISTS category_translations CASCADE;
+	
+	-- 2. Categories has a self-referencing FK + is referenced by many tables
+	-- Drop it last (after everything that references it is gone)
+	DROP TABLE IF EXISTS categories CASCADE;

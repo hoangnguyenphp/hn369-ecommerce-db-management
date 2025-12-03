@@ -7,6 +7,7 @@
 
 	<!-- Application -->
     <include file="db-changelog/app/db.changelog-01.xml"/>
+    <include file="db-changelog/app/db-changelog-data-01.xml"/>
     
     <!-- Online Code Formatter-->
     <include file="db-changelog/online-code-formatter/db-changelog-01.xml"/>
@@ -14,5 +15,6 @@
     
     <!-- Ecommerce Catalog -->
     <include file="db-changelog/ecommerce-catalog/db-changelog-01.xml"/>
+    <include file="db-changelog/ecommerce-catalog/db-changelog-data-001-init.xml"/>
 
 </databaseChangeLog>
